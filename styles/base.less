@@ -1,11 +1,11 @@
 @import "syntax-variables";
 
 atom-text-editor, :host {
-  background-color: @syntax-background-color;
+  background-color: @almost-black;
   color: @syntax-text-color;
 
   .wrap-guide {
-    background-color: @syntax-wrap-guide-color;
+    background-color: @almost-black;
   }
 
   .indent-guide {
@@ -17,12 +17,12 @@ atom-text-editor, :host {
   }
 
   .gutter {
-    background-color: @syntax-gutter-background-color;
+    background-color: #161616;
     color: @syntax-gutter-text-color;
 
     .line-number {
       &.cursor-line {
-        background-color: @syntax-gutter-background-color-selected;
+        background-color: @almost-black;
         color: @syntax-gutter-text-color-selected;
       }
 
@@ -35,7 +35,7 @@ atom-text-editor, :host {
   .gutter .line-number.folded,
   .gutter .line-number:after,
   .fold-marker:after {
-    color: @light-gray;
+    color: @lighter-grey;
   }
 
   .invisible {
@@ -53,7 +53,7 @@ atom-text-editor, :host {
 
 atom-text-editor .search-results .marker .region,
 :host .search-results .marker .region {
-  background-color: transparent;
+  background-color: @almost-black;
   border: 1px solid @syntax-result-marker-color;
 }
 
@@ -63,18 +63,22 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .comment {
-  color: @light-gray;
+  color: @light-grey;
+}
+
+.support {
+  color: @light-purple;
 }
 
 .keyword {
-  color: @purple;
+  color: @light-blue;
 
   &.control {
-    color: @purple;
+    color: @light-blue;
   }
 
   &.operator {
-    color: @syntax-text-color;
+    color: @light-blue;
   }
 
   &.other.special-method {
@@ -86,15 +90,15 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 }
 
-.storage {
-  color: @purple;
+.storage.type{
+  color: @light-purple;
 }
 
 .constant {
   color: @orange;
 
   &.character.escape {
-    color: @cyan;
+    color: @aqua;
   }
 
   &.numeric {
@@ -102,7 +106,7 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.other.color {
-    color: @cyan;
+    color: @aqua;
   }
 
   &.other.symbol {
@@ -111,10 +115,10 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .variable {
-  color: @red;
+  color: @blue;
 
   &.interpolation {
-    color: darken(@red, 10%);
+    color: darken(@blue, 10%);
   }
 
   &.parameter.function {
@@ -128,11 +132,11 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .string {
-  color: @green;
+  color: @light-green;
 
 
   &.regexp {
-    color: @cyan;
+    color: @aqua;
 
     .source.ruby.embedded {
       color: @orange;
@@ -147,14 +151,14 @@ atom-text-editor .search-results .marker.current-result .region,
 .punctuation {
   &.definition {
     &.comment {
-      color: @light-gray;
+      color: @light-grey;
     }
 
     &.string,
     &.variable,
     &.parameters,
     &.array {
-      color: @syntax-text-color;
+      color: @light-green;
     }
 
     &.heading,
@@ -163,12 +167,12 @@ atom-text-editor .search-results .marker.current-result .region,
     }
 
     &.bold {
-      color: @light-orange;
+      color: @orange;
       font-weight: bold;
     }
 
     &.italic {
-      color: @purple;
+      color: @light-purple;
       font-style: italic;
     }
   }
@@ -181,11 +185,11 @@ atom-text-editor .search-results .marker.current-result .region,
 
 .support {
   &.class {
-    color: @light-orange;
+    color: @orange;
   }
 
   &.function  {
-    color: @cyan;
+    color: @light-purple;
 
     &.any-method {
       color: @blue;
@@ -193,20 +197,23 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 }
 
+.type {
+  color: @light-blue;
+}
+
 .entity {
   &.name.function {
-    color: @blue;
+    color: @yellow;
   }
   &.name.type {
-    color: @light-orange;
-    text-decoration: underline;
+    color: @yellow;
   }
 
   &.other.inherited-class {
     color: @green;
   }
   &.name.class, &.name.type.class {
-    color: @light-orange;
+    color: @orange;
   }
 
   &.name.section {
@@ -219,17 +226,21 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.other.attribute-name {
-    color: @orange;
+    color: @light-purple;
 
     &.id {
       color: @blue;
     }
   }
+
+  &.punctuation {
+    color: @orange;
+  }
 }
 
 .meta {
   &.class {
-    color: @light-orange;
+    color: @orange;
   }
 
   &.link {
@@ -241,11 +252,11 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.selector {
-    color: @purple;
+    color: @light-purple;
   }
 
   &.separator {
-    background-color: @gray;
+    background-color: @grey;
     color: @syntax-text-color;
   }
 }
@@ -261,7 +272,7 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.changed {
-    color: @purple;
+    color: @light-purple;
   }
 
   &.deleted {
@@ -269,7 +280,7 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.italic {
-    color: @purple;
+    color: @light-purple;
     font-style: italic;
   }
 
