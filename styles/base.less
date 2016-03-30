@@ -1,7 +1,8 @@
 @import "syntax-variables";
+@import "languages/go";
 
 atom-text-editor, :host {
-  background-color: @almost-black;
+  background-color: @darker-grey;
   color: @syntax-text-color;
 
   .wrap-guide {
@@ -110,7 +111,7 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.other.symbol {
-    color: @green;
+    color: @light-green;
   }
 }
 
@@ -210,7 +211,7 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.other.inherited-class {
-    color: @green;
+    color: @light-green;
   }
   &.name.class, &.name.type.class {
     color: @orange;
@@ -289,7 +290,7 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.inserted {
-    color: @green;
+    color: @light-green;
   }
 
   &.list {
@@ -301,14 +302,14 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.raw.inline {
-    color: @green;
+    color: @light-green;
   }
 }
 
 .source.gfm .markup {
   -webkit-font-smoothing: auto;
   &.heading {
-    color: @green;
+    color: @light-green;
   }
 }
 
