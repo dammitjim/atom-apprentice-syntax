@@ -13,3 +13,7 @@ Preview screenshots were taken using the Atom Material UI theme.
 ### Less / Sass
 
 ![Less](https://raw.githubusercontent.com/jimah/atom-apprentice-syntax/master/preview/less.png "Less")
+
+### Python
+
+![Python](https://raw.githubusercontent.com/jimah/atom-apprentice-syntax/master/preview/python.png "Python")
