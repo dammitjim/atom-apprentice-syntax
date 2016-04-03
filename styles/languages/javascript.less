@@ -2,10 +2,18 @@
 
   .punctuation.definition {
     color: @syntax-text-color;
+
+    &.comment {
+      color: @light-grey;
+    }
   }
 
   .entity {
     &.function {
+      color: @syntax-text-color;
+    }
+
+    &.name.type {
       color: @syntax-text-color;
     }
   }
@@ -38,12 +46,7 @@
 
   .storage {
     &.type {
-      &.function {
-        color: @yellow;
-      }
-    }
-    &.modifier {
-      color: @light-purple;
+      color: @light-blue;
     }
   }
 }
