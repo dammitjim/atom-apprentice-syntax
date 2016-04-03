@@ -1,5 +1,5 @@
 {
-  "name": "apprentice-syntax",
+  "name": "atom-apprentice-syntax",
   "theme": "syntax",
   "version": "0.1.0",
   "description": "Port of the Apprentice colour scheme to Atom",
@@ -10,7 +10,7 @@
     "dark",
     "sorcerer"
   ],
-  "repository": "https://github.com/atom/apprentice-syntax",
+  "repository": "https://github.com/jimah/atom-apprentice-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
