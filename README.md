@@ -8,8 +8,8 @@ Preview screenshots were taken using the Atom Material UI theme.
 
 ### Golang
 
-![Go](preview/go.png "Go")
+![Go](https://raw.githubusercontent.com/jimah/atom-apprentice-syntax/master/preview/go.png "Go")
 
 ### Less / Sass
 
-![Less](preview/less.png "Less")
+![Less](https://raw.githubusercontent.com/jimah/atom-apprentice-syntax/master/preview/less.png "Less")
