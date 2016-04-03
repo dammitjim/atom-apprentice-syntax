@@ -1,11 +1,14 @@
 {
   "name": "apprentice-syntax",
   "theme": "syntax",
-  "version": "0.0.0",
-  "description": "A short description of your syntax theme",
+  "version": "0.1.0",
+  "description": "Port of the Apprentice colour scheme to Atom",
   "keywords": [
     "syntax",
-    "theme"
+    "theme",
+    "apprentice",
+    "dark",
+    "sorcerer"
   ],
   "repository": "https://github.com/atom/apprentice-syntax",
   "license": "MIT",
