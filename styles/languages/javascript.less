@@ -1,0 +1,46 @@
+.source.js {
+
+  .punctuation.definition {
+    color: @syntax-text-color;
+  }
+
+  .entity {
+    &.function {
+      color: @syntax-text-color;
+    }
+  }
+
+  .meta {
+    &.arguments {
+      color: @syntax-text-color;
+    }
+
+    &.brace {
+      color: @syntax-text-color;
+    }
+  }
+
+  .entity {
+    &.object {
+      color: @syntax-text-color;
+    }
+  }
+
+  .constant {
+    &.other {
+      color: @syntax-text-color;
+
+      &.regexp {
+        color: @red;
+      }
+    }
+  }
+
+  .storage {
+    &.type {
+      &.function {
+        color: @yellow;
+      }
+    }
+  }
+}

@@ -1,5 +1,5 @@
 @import "syntax-variables";
-@import "languages/go";
+@import "languages";
 
 atom-text-editor, :host {
   background-color: @darker-grey;
@@ -74,16 +74,8 @@ atom-text-editor .search-results .marker.current-result .region,
 .keyword {
   color: @light-blue;
 
-  &.control {
-    color: @light-blue;
-  }
-
-  &.operator {
-    color: @light-blue;
-  }
-
-  &.other.special-method {
-    color: @blue;
+  &.import {
+    color: @aqua;
   }
 
   &.other.unit {
@@ -91,40 +83,44 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 }
 
-.storage.type{
-  color: @light-purple;
+.storage {
+  color: @light-blue;
+
+  &.type {
+    color: @light-purple;
+  }
 }
 
 .constant {
   color: @orange;
 
-  &.character.escape {
-    color: @aqua;
-  }
-
-  &.numeric {
-    color: @orange;
-  }
-
-  &.other.color {
-    color: @aqua;
-  }
-
-  &.other.symbol {
-    color: @light-green;
-  }
+  // &.character.escape {
+  //   color: @aqua;
+  // }
+  //
+  // &.numeric {
+  //   color: @orange;
+  // }
+  //
+  // &.other.color {
+  //   color: @aqua;
+  // }
+  //
+  // &.other.symbol {
+  //   color: @light-green;
+  // }
 }
 
 .variable {
   color: @blue;
 
-  &.interpolation {
-    color: darken(@blue, 10%);
-  }
-
-  &.parameter.function {
-    color: @syntax-text-color;
-  }
+  // &.interpolation {
+  //   color: darken(@blue, 10%);
+  // }
+  //
+  // &.parameter.function {
+  //   color: @syntax-text-color;
+  // }
 }
 
 .invalid.illegal {
@@ -136,17 +132,21 @@ atom-text-editor .search-results .marker.current-result .region,
   color: @light-green;
 
 
-  &.regexp {
-    color: @aqua;
+  // &.regexp {
+  //   color: @aqua;
+  //
+  //   .source.ruby.embedded {
+  //     color: @orange;
+  //   }
+  // }
+  //
+  // &.other.link {
+  //   color: @red;
+  // }
+}
 
-    .source.ruby.embedded {
-      color: @orange;
-    }
-  }
-
-  &.other.link {
-    color: @red;
-  }
+.regexp {
+  color: @red;
 }
 
 .punctuation {
@@ -203,61 +203,43 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .entity {
-  &.name.function {
-    color: @yellow;
-  }
-  &.name.type {
-    color: @yellow;
-  }
+  color: @yellow;
 
-  &.other.inherited-class {
-    color: @light-green;
-  }
-  &.name.class, &.name.type.class {
-    color: @orange;
-  }
-
-  &.name.section {
-    color: @blue;
-  }
-
-  &.name.tag {
-    color: @red;
-    text-decoration: underline;
-  }
-
-  &.other.attribute-name {
+  &.other {
     color: @light-purple;
-
-    &.id {
-      color: @blue;
-    }
   }
 
   &.punctuation {
     color: @orange;
+
+    &.definition {
+      color: @orange;
+    }
+  }
+}
+
+.punctuation {
+  color: @syntax-text-color;
+
+  &.terminator {
+    color: @syntax-text-color;
+  }
+  &.section {
+    color: @yellow;
+  }
+  &.definition {
+    color: @aqua;
   }
 }
 
 .meta {
-  &.class {
-    color: @orange;
+  color: @orange;
+
+  &.regexp {
+    color: @syntax-text-color;
   }
 
-  &.link {
-    color: @orange;
-  }
-
-  &.require {
-    color: @blue;
-  }
-
-  &.selector {
-    color: @light-purple;
-  }
-
-  &.separator {
-    background-color: @grey;
+  &.delimiter {
     color: @syntax-text-color;
   }
 }
