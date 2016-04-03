@@ -1,5 +1,5 @@
-# apprentice-syntax theme
+# Apprentice syntax theme for Atom
 
-A short description of your theme.
+Port of the vim colour scheme [Apprentice](http://romainl.github.io/Apprentice/) to Atom!
 
-![A screenshot of your theme](https://f.cloud.github.com/assets/69169/2289498/4c3cb0ec-a009-11e3-8dbd-077ee11741e5.gif)
+If your language is not supported or the syntax colouring seems incorrect, please create a github issue :)
